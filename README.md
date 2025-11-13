@@ -32,8 +32,6 @@ Ideal zur schnellen Erkennung von:
   - `inventory_hosts_report.txt` (menschenlesbarer Textreport)
 - Ein sauber strukturierter Output-Ordner:
 
----
-
 Masscan_Inventar_Scanner_YYYYMMDD_HHMMSS/
 ├── logs/
 │ ├── masscan.log
@@ -73,7 +71,7 @@ pip3 install -r requirements.txt
 
 ---
 
-📝 targets.txt Beispiel
+## 📝 targets.txt Beispiel
 # IPv4 / IPv6 Netze oder einzelne Hosts
 10.140.104.1/24
 192.168.100.10
@@ -81,7 +79,7 @@ pip3 install -r requirements.txt
 
 ---
 
-🚀 Nutzung
+## 🚀 Nutzung
 
 Einfachster Lauf:
 
@@ -103,7 +101,7 @@ Ausgabeverzeichnis anpassen:
 
 sudo python3 masscan_inventar_scanner.py -f targets.txt --outdir /tmp/inventar
 
-⚠️ Hinweis zu Berechtigungen
+## ⚠️ Hinweis zu Berechtigungen
 
 Masscan benötigt für Raw-Sockets üblicherweise Root-Rechte:
 
