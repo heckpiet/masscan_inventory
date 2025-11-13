@@ -11,7 +11,7 @@ Ideal zur schnellen Erkennung von:
 - aktiven Hosts  
 - offenen Ports  
 - einfachen Gerätetyp-Indikatoren  
-- Netzstrukturoberblicken in großen Umgebungen  
+- Netzstrukturüberblick in großen Umgebungen  
 
 ---
 
