@@ -32,6 +32,8 @@ Ideal zur schnellen Erkennung von:
   - `inventory_hosts_report.txt` (menschenlesbarer Textreport)
 - Ein sauber strukturierter Output-Ordner:
 
+---
+
 Masscan_Inventar_Scanner_YYYYMMDD_HHMMSS/
 ├── logs/
 │ ├── masscan.log
