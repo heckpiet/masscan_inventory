@@ -32,3 +32,33 @@ Ideal zur schnellen Erkennung von:
   - `inventory_hosts_report.txt` (menschenlesbarer Textreport)
 - Ein sauber strukturierter Output-Ordner:
 
+Masscan_Inventar_Scanner_YYYYMMDD_HHMMSS/
+├── logs/
+│ ├── masscan.log
+│ └── errors.log
+├── output/
+│ ├── <target>_masscan_output.json
+│ ├── <target>_parsed.csv
+│ ├── <target>_parsed.json
+│ ├── <target>_summary.txt
+│ ├── inventory_hosts.csv
+│ ├── inventory_hosts.json
+│ └── inventory_hosts_report.txt
+└── html/ (Reserviert für spätere Web-Infos)
+
+
+---
+
+## 📦 Installation
+
+### Debian / Ubuntu Beispiel:
+
+```bash
+sudo apt update
+sudo apt install -y masscan python3 python3-pip
+
+Python-Pakete:
+pip3 install -r requirements.txt
+
+
+(Aktuell minimale Dependencies)
