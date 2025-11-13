@@ -64,3 +64,47 @@ pip3 install -r requirements.txt
 
 
 (Aktuell minimale Dependencies)
+
+Python-Pakete:
+pip3 install -r requirements.txt
+
+
+(Aktuell minimale Dependencies)
+
+📝 targets.txt Beispiel
+# IPv4 / IPv6 Netze oder einzelne Hosts
+10.140.104.1/24
+192.168.100.10
+2001:db8::/32
+
+🚀 Nutzung
+
+Einfachster Lauf:
+
+sudo python3 masscan_inventar_scanner.py -f targets.txt
+
+
+mit eigenen Ports:
+
+sudo python3 masscan_inventar_scanner.py -f targets.txt -p 22,80,443
+
+
+mit erhöhter Geschwindigkeit und mehr Parallelität:
+
+sudo python3 masscan_inventar_scanner.py -f targets.txt -r 5000 --concurrency 10
+
+
+Ausgabeverzeichnis anpassen:
+
+sudo python3 masscan_inventar_scanner.py -f targets.txt --outdir /tmp/inventar
+
+⚠️ Hinweis zu Berechtigungen
+
+Masscan benötigt für Raw-Sockets üblicherweise Root-Rechte:
+
+sudo masscan ...
+
+
+oder sicherer:
+
+sudo setcap cap_net_raw,cap_net_admin+ep $(which masscan)
